@@ -1,0 +1,15 @@
+﻿# Keep the build context small and avoid baking runtime cruft into the image.
+.git
+.gitattributes
+.gitignore
+.vscode
+
+# Runtime-generated data (also bind-mounted at run time anyway)
+src/public_html/application/logs/*
+src/session/*
+src/upload/applications/*
+src/upload/csv/*
+
+# Never bake local environment secrets into the image
+.env*
+

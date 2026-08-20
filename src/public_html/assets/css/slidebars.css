@@ -1,0 +1,242 @@
+#sb-site {
+	box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0); /* Shadow cast onto the slidebars when opened. */
+	padding: 50px 20px 50px;
+}
+
+.navbar {
+	box-shadow: /* Shadow beneath the bar and edge highlights. */
+		/* Layered single pixel shadows to create a one sided shadow effect. */
+		0 5px 0 0 rgba(0, 0, 0, 0.01),
+		0 4px 0 0 rgba(0, 0, 0, 0.02),
+		0 3px 0 0 rgba(0, 0, 0, 0.04),
+		0 2px 0 0 rgba(0, 0, 0, 0.06),
+		0 1px 0 0 rgba(0, 0, 0, 0.08),
+		/* Top highlight */
+		0 1px 0 0 rgba(255, 255, 255, 0.1) inset,
+		/* Left highlight */
+		1px 0 0 0 rgba(255, 255, 255, 0.1) inset,
+		/* Right highlight */
+		-1px 0 0 0 rgba(255, 255, 255, 0.1) inset,
+		/* Bottom lowlight */
+		0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
+		
+	/* Glass gradient overlay. */
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255, 0.05) 50%, rgba(0,0,0, 0.02) 51%); /*  Webkit syntax. */
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 50%, rgba(0, 0, 0, 0.02) 51%); /* Final syntax. */
+	background-size: 100%;
+	background-repeat: no-repeat;
+	
+	/* Bootstrap Changes */
+	border: none;
+	width: 100%;
+	left: auto;
+	right: auto;
+}
+
+#logo {
+	margin-top: 12px;
+	text-align: center;
+	font-size: 18px;
+}
+
+#top-arrow {
+	padding-top: 17px;
+	padding-bottom: 13px;
+}
+
+ul.navbar-nav>li>a {
+	color: #FFFFFF;
+}
+
+ul.navbar-nav>li>a:hover {
+	color: #2e34a4;
+}
+
+.navbar .sb-toggle-left {
+	width: 58px;
+	float: left;
+	padding: 14px;
+}
+
+.navbar .sb-toggle-right {
+	width: 58px;
+	float: right;
+	padding: 14px;
+}
+
+.sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-open-right, .sb-close {
+	cursor: pointer;
+}
+
+.sb-right {
+	margin-top: 50px;
+}
+
+.navicon-line {
+	width: 24px;
+	height: 4px;
+	border-radius: 1px;
+	margin-bottom: 3px;
+	background-color: #fff;
+}
+
+ul.navbar-nav {
+	display: none;
+}
+
+
+/* Main Menu */
+.sb-menu { /* Apply to <ul> or <ol>. */
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.sb-menu li {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.1); /* Will lighten any background colour you set. */
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Will darken any background colour you set. */
+}
+
+.sb-menu > li:first-child {
+	border-top: none; /* Removes top border from first list item.. */
+}
+
+.sb-menu > li:last-child {
+	border-bottom: none; /* Removed bottom border from last list item. */
+}
+
+.sb-menu li a {
+	width: 100%; /* Makes links full width. */
+	display: inline-block;
+	padding: 1em; /* Creates an even padding the same size as your font. */
+	color: #f2f2f2;
+}
+
+.sb-menu li a:hover {
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.05); /* Will lighten any background colour you set. */
+}
+
+/* Left nav */
+.sb-left {
+	border: 8px solid #2e34a4;
+	background-color: #2e34a4;
+}
+
+.sb-left>ul {
+	margin: 5px 0 0;
+	padding: 0;
+	list-style: none;
+	background-color: #2e34a4;
+}
+
+.sb-left>ul>li {
+	list-style: none;
+	
+	box-shadow: /* Shadow beneath the bar and edge highlights. */
+		/* Layered single pixel shadows to create a one sided shadow effect. */
+		0 5px 0 0 rgba(0, 0, 0, 0.01),
+		0 4px 0 0 rgba(0, 0, 0, 0.02),
+		0 3px 0 0 rgba(0, 0, 0, 0.04),
+		0 2px 0 0 rgba(0, 0, 0, 0.06),
+		0 1px 0 0 rgba(0, 0, 0, 0.08),
+		/* Top highlight */
+		0 1px 0 0 rgba(255, 255, 255, 0.1) inset,
+		/* Left highlight */
+		1px 0 0 0 rgba(255, 255, 255, 0.1) inset,
+		/* Right highlight */
+		-1px 0 0 0 rgba(255, 255, 255, 0.1) inset,
+		/* Bottom lowlight */
+		0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
+	
+	margin-bottom: 4px;
+}
+
+.sb-left>ul>li>div.nav_1_item {
+	border: 3px solid #2e34a4;
+}
+
+.sb-left>ul>li>div.nav_1_item.active, .sb-left>ul>li>div.nav_1_item:hover {
+	border: 3px solid #FFFFFF;
+}
+
+.sb-left>ul>li>div.nav_1_item>a.nav_1_label {
+	display: inline-block; 
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #2e34a4;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+.sb-left>ul>li>div.nav_1_item>a>span.glyphicon {
+	color: #FFFFFF;
+	width: 10%;
+	min-width: 10px;
+	float: right;
+	text-align: right;
+	font-size: 10px;
+	padding: 5px;
+}
+
+.sb-left>ul>li>ul {
+	margin: 0px;
+	padding: 0px;
+	background-color: #E6E6E6;
+	border-left: 3px solid #FFFFFF;
+	border-right: 3px solid #FFFFFF;
+	display: none;
+}
+
+.sb-left>ul>li>ul>li>a.nav_2_item {
+	display: block;
+	padding: 5px 10px 5px 20px;
+	font-size: 18px;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	margin-bottom: 3px;
+}
+
+.sb-left>ul>li>ul>li>a.nav_2_item:hover {
+	text-decoration: underline;
+}
+
+.sb-left>ul>li>ul>li>ul {
+	/*list-style: none;*/
+	margin: 0px;
+	padding: 0px;
+	display: none;
+}
+
+.sb-left>ul>li>ul>li>ul>li>a.nav_3_item {
+	display: block;
+	padding: 5px 20px 5px 40px;
+	font-size: 15px;
+	text-decoration: none;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+@media (min-width: 768px) {
+	ul.navbar-nav {
+		display: block;
+	}
+	
+	#logo {
+		margin-top: 4px;
+		text-align: left;
+		font-size: 28px;
+	}
+}
+
+@media (min-width: 992px) {
+	
+}
+
+@media (min-width: 1200px) {
+
+}

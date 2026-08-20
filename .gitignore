@@ -1,0 +1,12 @@
+﻿#src/public_html/index.php
+#src/public_html/.htaccess
+##
+src/session/*
+src/public_html/application/logs/*
+src/upload/applications/*
+src/upload/csv/*
+# Local Docker/database secrets
+.env
+.env.*
+!.env.example
+

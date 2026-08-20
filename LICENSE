@@ -1,0 +1,32 @@
+CONFIDENTIAL VENDOR EVALUATION LICENSE
+
+Copyright (c) 2026 Ken Chow. All rights reserved.
+
+Permission is granted only to a vendor account expressly authorized by Ken
+Chow to access this private repository, and only for evaluating and performing
+the agreed proof-of-concept modernization of this software.
+
+This permission is limited, non-exclusive, non-transferable, revocable, and
+does not permit the vendor to:
+
+1. publish, redistribute, sublicense, sell, or otherwise disclose the software
+   or any derivative work to another person or organization;
+2. use the software or any derivative work in production or for any commercial
+   or operational purpose outside the agreed proof of concept; or
+3. reuse the software, its data model, or its implementation in another
+   project without prior written permission from Ken Chow.
+
+The vendor must use reasonable safeguards to keep the software confidential.
+When the proof of concept ends, repository access is withdrawn, or Ken Chow
+requests it, the vendor must stop using the software and securely delete all
+copies under its control, except where retention is required by law.
+
+No ownership rights are transferred under this license. Third-party software
+included in this repository remains subject to its own copyright notices and
+license terms; this notice does not restrict rights granted by those licenses.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. TO THE MAXIMUM EXTENT
+PERMITTED BY LAW, KEN CHOW IS NOT LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.

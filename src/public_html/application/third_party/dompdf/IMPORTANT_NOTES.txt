@@ -1,0 +1,7 @@
+How to create fonts by using load_font.php in dompdf
+
+ref:https://github.com/dompdf/dompdf/wiki/UnicodeHowTo
+
+Command(must be run on linux):
+cd /home/gstran/public_html/gsadmin/application/third_party/dompdf
+/usr/bin/php load_font.php 'fireflysung' fonts/fireflysung.ttf

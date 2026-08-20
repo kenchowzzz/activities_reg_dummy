@@ -1,0 +1,24 @@
+﻿services:
+  web:
+    build:
+      context: .
+    image: teacher-activity-management
+    container_name: teacher-activity-management
+    environment:
+      CI_ENV: ${CI_ENV:-self-development}
+      DB_HOSTNAME: ${DB_HOSTNAME:?DB_HOSTNAME must be set in .env}
+      DB_USERNAME: ${DB_USERNAME:?DB_USERNAME must be set in .env}
+      DB_PASSWORD: ${DB_PASSWORD:?DB_PASSWORD must be set in .env}
+      DB_DATABASE: ${DB_DATABASE:?DB_DATABASE must be set in .env}
+      DB_DRIVER: ${DB_DRIVER:-sqlsrv}
+    ports:
+      # host 4443 -> container 443 (matches base_url https://127.0.0.1:4443/)
+      - "4443:443"
+    volumes:
+      # Live-edit: your Windows source is mounted into the container, so
+      # code changes show up immediately without rebuilding the image.
+      - ./src/public_html:/var/www/html
+      - ./src/upload:/var/www/upload
+    restart: unless-stopped
+
+
