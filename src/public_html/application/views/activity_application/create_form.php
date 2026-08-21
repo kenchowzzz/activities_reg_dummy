@@ -27,7 +27,6 @@
 			<legend class="legend-default">ABC Secondary School</legend>
 			<div class="form-group">
 				<label for="organiser_dept" class="col-sm-2 control-label"><span class="required">* </span>ABC Secondary School Organiser Department
-				<a data-toggle="tooltip" data-placement="bottom" title="The organiser must be a University department/office/unit. Student organisations and external parties are not accepted as organisers of activity programmes. The organiser is usually expected to arrange department staff member(s) to stay on-site during the programme for management." onclick="return false;"><i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
 				</label>
 				<div class="col-sm-10">
 					<select id="organiser_dept" name="organiser_dept" class="form-control" required><option value="">-- Select --</option><option value="CHINESE">Chinese Department</option><option value="ENGLISH">English Department</option><option value="MATH">Math Department</option><option value="SCIENCE">Science Department</option></select>
